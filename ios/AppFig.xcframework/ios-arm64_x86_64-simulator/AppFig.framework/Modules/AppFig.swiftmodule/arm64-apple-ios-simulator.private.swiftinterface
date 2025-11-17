@@ -1,0 +1,42 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios12-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppFig
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class AppFig {
+  public static func initialize(companyId: Swift.String, tenantId: Swift.String, env: Swift.String, apiKey: Swift.String, autoRefresh: Swift.Bool = true, pollInterval: Foundation.TimeInterval = 43200000, debugMode: Swift.Bool = false, sessionTimeoutMs: Foundation.TimeInterval = 1800000, maxEvents: Swift.Int = 5000, maxEventAgeDays: Swift.Int = 7, onReady: (() -> Swift.Void)? = nil, onRulesUpdated: (() -> Swift.Void)? = nil)
+  public static func initializeLocal(rulesJson: Swift.String? = nil, onReady: (() -> Swift.Void)? = nil, onRulesUpdated: (() -> Swift.Void)? = nil)
+  public static func logEvent(name: Swift.String, parameters: [Swift.String : Swift.String]? = nil)
+  public static func logScreenView(screenName: Swift.String, previousScreen: Swift.String? = nil)
+  public static func setUserProperty(key: Swift.String, value: Swift.String)
+  public static func removeUserProperty(key: Swift.String)
+  public static func setDeviceProperty(key: Swift.String, value: Swift.String)
+  public static func removeDeviceProperty(key: Swift.String)
+  public static func setAppVersion(_ version: Swift.String)
+  @available(*, deprecated, message: "Country is now automatically detected from CDN response headers during rules fetch.")
+  public static func detectAndSetCountry(completion: ((Swift.String?) -> Swift.Void)? = nil)
+  public static func isFeatureEnabled(_ feature: Swift.String) -> Swift.Bool
+  public static func getFeatureValue(_ feature: Swift.String) -> Swift.String?
+  public static func hasRulesLoaded() -> Swift.Bool
+  public static func resetFeature(_ featureName: Swift.String)
+  public static func resetAllFeatures()
+  public static func addListener(featureName: Swift.String, listener: @escaping (Swift.String, Swift.String?) -> Swift.Void)
+  public static func removeAllListeners(featureName: Swift.String)
+  public static func clearAllListeners()
+  public static func resetSession()
+  public static func updateActivity()
+  @available(*, deprecated, message: "Use the autoRefresh parameter in initialize() instead")
+  public static func setAutoRefresh(enabled: Swift.Bool)
+  @available(*, deprecated, message: "Use the pollInterval parameter in initialize() instead")
+  public static func setPollInterval(_ intervalMs: Foundation.TimeInterval)
+  public static func refreshRules()
+  public static func clearCache(companyId: Swift.String, tenantId: Swift.String, env: Swift.String)
+  public static func clearEventHistory()
+  public static func getEventHistoryStats() -> [Swift.String : Any]
+  @objc deinit
+}
