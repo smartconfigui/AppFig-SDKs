@@ -1,15 +1,15 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "AppFig",
-    "printedName": "AppFig",
+    "name": "AppFigSDK",
+    "printedName": "AppFigSDK",
     "children": [
       {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "AppFig",
+        "moduleName": "AppFigSDK",
         "declAttributes": [
           "RawDocComment"
         ]
@@ -19,7 +19,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "AppFig",
+        "moduleName": "AppFigSDK",
         "declAttributes": [
           "RawDocComment"
         ]
@@ -29,7 +29,456 @@
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "AppFig"
+        "moduleName": "AppFigSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IAnalyticsProvider",
+        "printedName": "IAnalyticsProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK18IAnalyticsProviderP15setUserProperty3key5valueySS_SStF",
+            "mangledName": "$s9AppFigSDK18IAnalyticsProviderP15setUserProperty3key5valueySS_SStF",
+            "moduleName": "AppFigSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : AppFigSDK.IAnalyticsProvider>",
+            "sugared_genericSig": "<Self where Self : AppFigSDK.IAnalyticsProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9AppFigSDK18IAnalyticsProviderP",
+        "mangledName": "$s9AppFigSDK18IAnalyticsProviderP",
+        "moduleName": "AppFigSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AmplitudeProvider",
+        "printedName": "AmplitudeProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(amplitude:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AmplitudeProvider",
+                "printedName": "AppFigSDK.AmplitudeProvider",
+                "usr": "s:9AppFigSDK17AmplitudeProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AppFigSDK17AmplitudeProviderC9amplitudeACSo8NSObjectC_tcfc",
+            "mangledName": "$s9AppFigSDK17AmplitudeProviderC9amplitudeACSo8NSObjectC_tcfc",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK17AmplitudeProviderC15setUserProperty3key5valueySS_SStF",
+            "mangledName": "$s9AppFigSDK17AmplitudeProviderC15setUserProperty3key5valueySS_SStF",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9AppFigSDK17AmplitudeProviderC",
+        "mangledName": "$s9AppFigSDK17AmplitudeProviderC",
+        "moduleName": "AppFigSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "IAnalyticsProvider",
+            "printedName": "IAnalyticsProvider",
+            "usr": "s:9AppFigSDK18IAnalyticsProviderP",
+            "mangledName": "$s9AppFigSDK18IAnalyticsProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FirebaseProvider",
+        "printedName": "FirebaseProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(firebase:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FirebaseProvider",
+                "printedName": "AppFigSDK.FirebaseProvider",
+                "usr": "s:9AppFigSDK16FirebaseProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AppFigSDK16FirebaseProviderC8firebaseACSo8NSObjectC_tcfc",
+            "mangledName": "$s9AppFigSDK16FirebaseProviderC8firebaseACSo8NSObjectC_tcfc",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK16FirebaseProviderC15setUserProperty3key5valueySS_SStF",
+            "mangledName": "$s9AppFigSDK16FirebaseProviderC15setUserProperty3key5valueySS_SStF",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9AppFigSDK16FirebaseProviderC",
+        "mangledName": "$s9AppFigSDK16FirebaseProviderC",
+        "moduleName": "AppFigSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "IAnalyticsProvider",
+            "printedName": "IAnalyticsProvider",
+            "usr": "s:9AppFigSDK18IAnalyticsProviderP",
+            "mangledName": "$s9AppFigSDK18IAnalyticsProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MixpanelProvider",
+        "printedName": "MixpanelProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(mixpanel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MixpanelProvider",
+                "printedName": "AppFigSDK.MixpanelProvider",
+                "usr": "s:9AppFigSDK16MixpanelProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AppFigSDK16MixpanelProviderC8mixpanelACSo8NSObjectC_tcfc",
+            "mangledName": "$s9AppFigSDK16MixpanelProviderC8mixpanelACSo8NSObjectC_tcfc",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK16MixpanelProviderC15setUserProperty3key5valueySS_SStF",
+            "mangledName": "$s9AppFigSDK16MixpanelProviderC15setUserProperty3key5valueySS_SStF",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9AppFigSDK16MixpanelProviderC",
+        "mangledName": "$s9AppFigSDK16MixpanelProviderC",
+        "moduleName": "AppFigSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "IAnalyticsProvider",
+            "printedName": "IAnalyticsProvider",
+            "usr": "s:9AppFigSDK18IAnalyticsProviderP",
+            "mangledName": "$s9AppFigSDK18IAnalyticsProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NullAnalyticsProvider",
+        "printedName": "NullAnalyticsProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NullAnalyticsProvider",
+                "printedName": "AppFigSDK.NullAnalyticsProvider",
+                "usr": "s:9AppFigSDK21NullAnalyticsProviderC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9AppFigSDK21NullAnalyticsProviderCACycfc",
+            "mangledName": "$s9AppFigSDK21NullAnalyticsProviderCACycfc",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserProperty",
+            "printedName": "setUserProperty(key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK21NullAnalyticsProviderC15setUserProperty3key5valueySS_SStF",
+            "mangledName": "$s9AppFigSDK21NullAnalyticsProviderC15setUserProperty3key5valueySS_SStF",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9AppFigSDK21NullAnalyticsProviderC",
+        "mangledName": "$s9AppFigSDK21NullAnalyticsProviderC",
+        "moduleName": "AppFigSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "IAnalyticsProvider",
+            "printedName": "IAnalyticsProvider",
+            "usr": "s:9AppFigSDK18IAnalyticsProviderP",
+            "mangledName": "$s9AppFigSDK18IAnalyticsProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -166,9 +615,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC10initialize9companyId06tenantE03env6apiKey11autoRefresh12pollInterval9debugMode16sessionTimeoutMs9maxEvents0S12EventAgeDays7onReady0X12RulesUpdatedySS_S3SSbSdSbSdS2iyycSgAPtFZ",
-            "mangledName": "$s6AppFigAAC10initialize9companyId06tenantE03env6apiKey11autoRefresh12pollInterval9debugMode16sessionTimeoutMs9maxEvents0S12EventAgeDays7onReady0X12RulesUpdatedySS_S3SSbSdSbSdS2iyycSgAPtFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C10initialize9companyId06tenantF03env6apiKey11autoRefresh12pollInterval9debugMode16sessionTimeoutMs9maxEvents0T12EventAgeDays7onReady0Y12RulesUpdatedySS_S3SSbSdSbSdS2iyycSgAQtFZ",
+            "mangledName": "$s9AppFigSDK0aB0C10initialize9companyId06tenantF03env6apiKey11autoRefresh12pollInterval9debugMode16sessionTimeoutMs9maxEvents0T12EventAgeDays7onReady0Y12RulesUpdatedySS_S3SSbSdSbSdS2iyycSgAQtFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -256,9 +705,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC15initializeLocal9rulesJson7onReady0G12RulesUpdatedySSSg_yycSgAHtFZ",
-            "mangledName": "$s6AppFigAAC15initializeLocal9rulesJson7onReady0G12RulesUpdatedySSSg_yycSgAHtFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C15initializeLocal9rulesJson7onReady0H12RulesUpdatedySSSg_yycSgAItFZ",
+            "mangledName": "$s9AppFigSDK0aB0C15initializeLocal9rulesJson7onReady0H12RulesUpdatedySSSg_yycSgAItFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -314,9 +763,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC8logEvent4name10parametersySS_SDyS2SGSgtFZ",
-            "mangledName": "$s6AppFigAAC8logEvent4name10parametersySS_SDyS2SGSgtFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C8logEvent4name10parametersySS_SDyS2SGSgtFZ",
+            "mangledName": "$s9AppFigSDK0aB0C8logEvent4name10parametersySS_SDyS2SGSgtFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -358,9 +807,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC13logScreenView10screenName08previousD0ySS_SSSgtFZ",
-            "mangledName": "$s6AppFigAAC13logScreenView10screenName08previousD0ySS_SSSgtFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C13logScreenView10screenName08previousE0ySS_SSSgtFZ",
+            "mangledName": "$s9AppFigSDK0aB0C13logScreenView10screenName08previousE0ySS_SSSgtFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -393,9 +842,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC15setUserProperty3key5valueySS_SStFZ",
-            "mangledName": "$s6AppFigAAC15setUserProperty3key5valueySS_SStFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C15setUserProperty3key5valueySS_SStFZ",
+            "mangledName": "$s9AppFigSDK0aB0C15setUserProperty3key5valueySS_SStFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -422,9 +871,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC18removeUserProperty3keyySS_tFZ",
-            "mangledName": "$s6AppFigAAC18removeUserProperty3keyySS_tFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C18removeUserProperty3keyySS_tFZ",
+            "mangledName": "$s9AppFigSDK0aB0C18removeUserProperty3keyySS_tFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -457,9 +906,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC17setDeviceProperty3key5valueySS_SStFZ",
-            "mangledName": "$s6AppFigAAC17setDeviceProperty3key5valueySS_SStFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C17setDeviceProperty3key5valueySS_SStFZ",
+            "mangledName": "$s9AppFigSDK0aB0C17setDeviceProperty3key5valueySS_SStFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -486,9 +935,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC20removeDeviceProperty3keyySS_tFZ",
-            "mangledName": "$s6AppFigAAC20removeDeviceProperty3keyySS_tFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C20removeDeviceProperty3keyySS_tFZ",
+            "mangledName": "$s9AppFigSDK0aB0C20removeDeviceProperty3keyySS_tFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -515,9 +964,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC03setA7VersionyySSFZ",
-            "mangledName": "$s6AppFigAAC03setA7VersionyySSFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C03setA7VersionyySSFZ",
+            "mangledName": "$s9AppFigSDK0aB0C03setA7VersionyySSFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -573,9 +1022,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC19detectAndSetCountry10completionyySSSgcSg_tFZ",
-            "mangledName": "$s6AppFigAAC19detectAndSetCountry10completionyySSSgcSg_tFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C19detectAndSetCountry10completionyySSSgcSg_tFZ",
+            "mangledName": "$s9AppFigSDK0aB0C19detectAndSetCountry10completionyySSSgcSg_tFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "deprecated": true,
             "declAttributes": [
@@ -605,9 +1054,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC16isFeatureEnabledySbSSFZ",
-            "mangledName": "$s6AppFigAAC16isFeatureEnabledySbSSFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C16isFeatureEnabledySbSSFZ",
+            "mangledName": "$s9AppFigSDK0aB0C16isFeatureEnabledySbSSFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -643,9 +1092,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC15getFeatureValueySSSgSSFZ",
-            "mangledName": "$s6AppFigAAC15getFeatureValueySSSgSSFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C15getFeatureValueySSSgSSFZ",
+            "mangledName": "$s9AppFigSDK0aB0C15getFeatureValueySSSgSSFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -667,9 +1116,161 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC14hasRulesLoadedSbyFZ",
-            "mangledName": "$s6AppFigAAC14hasRulesLoadedSbyFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C14hasRulesLoadedSbyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C14hasRulesLoadedSbyFZ",
+            "moduleName": "AppFigSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserId",
+            "printedName": "setUserId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB0C9setUserIdyySSSgFZ",
+            "mangledName": "$s9AppFigSDK0aB0C9setUserIdyySSSgFZ",
+            "moduleName": "AppFigSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserId",
+            "printedName": "getUserId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB0C9getUserIdSSSgyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C9getUserIdSSSgyFZ",
+            "moduleName": "AppFigSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnVariantAssigned",
+            "printedName": "setOnVariantAssigned(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB0C20setOnVariantAssignedyyySS_SStcFZ",
+            "mangledName": "$s9AppFigSDK0aB0C20setOnVariantAssignedyyySS_SStcFZ",
+            "moduleName": "AppFigSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerAnalyticsProvider",
+            "printedName": "registerAnalyticsProvider(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IAnalyticsProvider",
+                "printedName": "any AppFigSDK.IAnalyticsProvider",
+                "usr": "s:9AppFigSDK18IAnalyticsProviderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB0C25registerAnalyticsProvideryyAA010IAnalyticsF0_pFZ",
+            "mangledName": "$s9AppFigSDK0aB0C25registerAnalyticsProvideryyAA010IAnalyticsF0_pFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -696,9 +1297,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC12resetFeatureyySSFZ",
-            "mangledName": "$s6AppFigAAC12resetFeatureyySSFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C12resetFeatureyySSFZ",
+            "mangledName": "$s9AppFigSDK0aB0C12resetFeatureyySSFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -719,9 +1320,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC16resetAllFeaturesyyFZ",
-            "mangledName": "$s6AppFigAAC16resetAllFeaturesyyFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C16resetAllFeaturesyyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C16resetAllFeaturesyyFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -787,9 +1388,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC11addListener11featureName8listenerySS_ySS_SSSgtctFZ",
-            "mangledName": "$s6AppFigAAC11addListener11featureName8listenerySS_ySS_SSSgtctFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C11addListener11featureName8listenerySS_ySS_SSSgtctFZ",
+            "mangledName": "$s9AppFigSDK0aB0C11addListener11featureName8listenerySS_ySS_SSSgtctFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -816,9 +1417,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC18removeAllListeners11featureNameySS_tFZ",
-            "mangledName": "$s6AppFigAAC18removeAllListeners11featureNameySS_tFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C18removeAllListeners11featureNameySS_tFZ",
+            "mangledName": "$s9AppFigSDK0aB0C18removeAllListeners11featureNameySS_tFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -838,9 +1439,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC17clearAllListenersyyFZ",
-            "mangledName": "$s6AppFigAAC17clearAllListenersyyFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C17clearAllListenersyyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C17clearAllListenersyyFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -860,9 +1461,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC12resetSessionyyFZ",
-            "mangledName": "$s6AppFigAAC12resetSessionyyFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C12resetSessionyyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C12resetSessionyyFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -883,9 +1484,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC14updateActivityyyFZ",
-            "mangledName": "$s6AppFigAAC14updateActivityyyFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C14updateActivityyyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C14updateActivityyyFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -912,9 +1513,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC14setAutoRefresh7enabledySb_tFZ",
-            "mangledName": "$s6AppFigAAC14setAutoRefresh7enabledySb_tFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C14setAutoRefresh7enabledySb_tFZ",
+            "mangledName": "$s9AppFigSDK0aB0C14setAutoRefresh7enabledySb_tFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "deprecated": true,
             "declAttributes": [
@@ -943,9 +1544,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC15setPollIntervalyySdFZ",
-            "mangledName": "$s6AppFigAAC15setPollIntervalyySdFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C15setPollIntervalyySdFZ",
+            "mangledName": "$s9AppFigSDK0aB0C15setPollIntervalyySdFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "deprecated": true,
             "declAttributes": [
@@ -968,9 +1569,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC12refreshRulesyyFZ",
-            "mangledName": "$s6AppFigAAC12refreshRulesyyFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C12refreshRulesyyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C12refreshRulesyyFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -1009,9 +1610,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC10clearCache9companyId06tenantF03envySS_S2StFZ",
-            "mangledName": "$s6AppFigAAC10clearCache9companyId06tenantF03envySS_S2StFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C10clearCache9companyId06tenantG03envySS_S2StFZ",
+            "mangledName": "$s9AppFigSDK0aB0C10clearCache9companyId06tenantG03envySS_S2StFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -1032,9 +1633,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC17clearEventHistoryyyFZ",
-            "mangledName": "$s6AppFigAAC17clearEventHistoryyyFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C17clearEventHistoryyyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C17clearEventHistoryyyFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -1069,9 +1670,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AppFigAAC20getEventHistoryStatsSDySSypGyFZ",
-            "mangledName": "$s6AppFigAAC20getEventHistoryStatsSDySSypGyFZ",
-            "moduleName": "AppFig",
+            "usr": "s:9AppFigSDK0aB0C20getEventHistoryStatsSDySSypGyFZ",
+            "mangledName": "$s9AppFigSDK0aB0C20getEventHistoryStatsSDySSypGyFZ",
+            "moduleName": "AppFigSDK",
             "static": true,
             "declAttributes": [
               "Final",
@@ -1082,9 +1683,9 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:6AppFigAAC",
-        "mangledName": "$s6AppFigAAC",
-        "moduleName": "AppFig",
+        "usr": "s:9AppFigSDK0aB0C",
+        "mangledName": "$s9AppFigSDK0aB0C",
+        "moduleName": "AppFigSDK",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -1113,533 +1714,582 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1814,
+      "length": 20,
+      "value": "\"setUserProperties:\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2679,
+      "length": 26,
+      "value": "\"setUserProperty:forName:\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3437,
+      "length": 6,
+      "value": "\"set:\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1413,
+      "offset": 4577,
       "length": 8,
       "value": "43200000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1497,
+      "offset": 4661,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1561,
+      "offset": 4725,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1614,
+      "offset": 4778,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1663,
+      "offset": 4827,
       "length": 16,
       "value": "\"com.appfig.sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1766,
+      "offset": 4930,
       "length": 22,
       "value": "\"com.appfig.sdk.queue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1961,
+      "offset": 5125,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2008,
+      "offset": 5172,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2133,
+      "offset": 5297,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2178,
+      "offset": 5342,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2218,
+      "offset": 5382,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2261,
+      "offset": 5425,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2308,
+      "offset": 5472,
       "length": 31,
       "value": "\"https:\/\/rules-prod.appfig.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2384,
+      "offset": 5548,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2441,
+      "offset": 5605,
       "length": 8,
       "value": "43200000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2500,
+      "offset": 5664,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2561,
+      "offset": 5725,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2610,
+      "offset": 5774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2656,
+      "offset": 5820,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2707,
+      "offset": 5871,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 2783,
+      "offset": 5947,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 2838,
+      "offset": 6002,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 2900,
+      "offset": 6064,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 2964,
+      "offset": 6128,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 3025,
+      "offset": 6189,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 3082,
+      "offset": 6246,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 3168,
+      "offset": 6332,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3221,
+      "offset": 6385,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3297,
+      "offset": 6461,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3345,
+      "offset": 6509,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3400,
+      "offset": 6564,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3476,
+      "offset": 6640,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3529,
+      "offset": 6693,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 3685,
+      "offset": 6849,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 3765,
+      "offset": 6929,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 3847,
+      "offset": 7011,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 3914,
+      "offset": 7078,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3981,
+      "offset": 7145,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 4174,
+      "offset": 7338,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 4317,
+      "offset": 7481,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 4386,
+      "offset": 7550,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 4471,
+      "offset": 7635,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 4544,
+      "offset": 7708,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 4619,
+      "offset": 7783,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 4681,
+      "offset": 7845,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 4803,
+      "offset": 7967,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 4883,
+      "offset": 8047,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 4965,
+      "offset": 8129,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5017,
+      "offset": 8181,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5121,
+      "offset": 8285,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5184,
+      "offset": 8348,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5236,
+      "offset": 8400,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5304,
+      "offset": 8468,
       "length": 6,
       "value": "600000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5390,
+      "offset": 8554,
       "length": 8,
       "value": "43200000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 5632,
+      "offset": 8874,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "Dictionary",
+      "offset": 9000,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "Dictionary",
+      "offset": 9273,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9364,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "Array",
+      "offset": 9470,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 7858,
+      "offset": 11757,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 7901,
+      "offset": 11800,
       "length": 8,
       "value": "43200000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 7937,
+      "offset": 11836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 7985,
+      "offset": 11884,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8019,
+      "offset": 11918,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8056,
+      "offset": 11955,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 41044,
+      "offset": 47364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 50307,
+      "offset": 60282,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 50324,
+      "offset": 60299,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 73751,
+      "offset": 83957,
       "length": 17,
       "value": "\"user_properties\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 73807,
+      "offset": 84013,
       "length": 26,
       "value": "\"user_properties_operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 73884,
+      "offset": 84090,
       "length": 17,
       "value": "\"device_operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 74158,
+      "offset": 84364,
       "length": 10,
       "value": "\"operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 74193,
+      "offset": 84399,
       "length": 10,
       "value": "\"ordering\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 74496,
+      "offset": 84702,
       "length": 10,
       "value": "\"operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 74556,
+      "offset": 84762,
       "length": 18,
       "value": "\"within_last_days\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 75187,
+      "offset": 85393,
       "length": 16,
       "value": "\"schema_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 75268,
+      "offset": 85474,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 75309,
+      "offset": 85515,
       "length": 15,
       "value": "\"feature_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 75348,
+      "offset": 85554,
       "length": 10,
       "value": "\"ttl_secs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 75394,
+      "offset": 85600,
       "length": 24,
       "value": "\"min_poll_interval_secs\""
     }

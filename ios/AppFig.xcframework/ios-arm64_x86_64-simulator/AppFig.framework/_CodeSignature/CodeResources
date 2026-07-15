@@ -6,119 +6,119 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		AOCvxtihqsaBeG5BqhPpHJh9ZKo=
+		PhY+4LLeQ1eiJBDptb8ILlQPLcw=
 		</data>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		tnQWcv8bBb/D7bIYNR8BehwrMoY=
+		RkY18E4blKVRT1RLGlhHCGZghzs=
 		</data>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/WLR4slWMEZC0BqfKEwCK3yRnqQ=
+		UT2cGjVErnFA/ED3UkMwfr6levE=
 		</data>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XCDPPtlzVGBxku/iwoQ/6BYJSIo=
+		a+j05rvc13aUhxt34LVi9tHXd9E=
 		</data>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/WLR4slWMEZC0BqfKEwCK3yRnqQ=
+		UT2cGjVErnFA/ED3UkMwfr6levE=
 		</data>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		q0eev6N6bVyOIwOdxxaUIN1nZc4=
+		jWb3YLrDzp95ZQfrosaliqtsyaA=
 		</data>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		tnQWcv8bBb/D7bIYNR8BehwrMoY=
+		RkY18E4blKVRT1RLGlhHCGZghzs=
 		</data>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xyGV7yWeQj367jwVkH4YQKijCAU=
+		3QvJHdoHvYvek0B7Gt5B58tdcgU=
 		</data>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UtV/uL7Mx7oealAE7gOyfMSQHWw=
+		/64t5der3oas+7SCNRWZ0lpfUMo=
 		</data>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xyGV7yWeQj367jwVkH4YQKijCAU=
+		3QvJHdoHvYvek0B7Gt5B58tdcgU=
 		</data>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WyHnt065MrUXJQb5JqTV9+WpPi8=
+		dej0o0lNCUPVvNpRH7ZUlTfJT70=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QB4F8LT1pJ+LgHW9eGHTf0/yVY0H8Tg/hpwofrYXU04=
+			JDhFEJiSoYByDBEFuxqmq4d8rqMTIHJjiE3IUl5rULo=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			URYmoN9j4fDwei9HOQ86yEl26cLYq0QzdreCYPhyNkk=
+			EBsaeCLDm5tEzjThaeLSnbxLPwGIEm+Ds1Thzi5RxHI=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uzR9W6KaRVs5vGo8c78mFWCWrU4ZWvSpqepPmWOCqUo=
+			kBNZr7F58B0asyHsaR/gf47IvVT92o51ncTkrnZ2aMU=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			URYmoN9j4fDwei9HOQ86yEl26cLYq0QzdreCYPhyNkk=
+			EBsaeCLDm5tEzjThaeLSnbxLPwGIEm+Ds1Thzi5RxHI=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NM7RmnnN9gbM+2wqp2kZQ7DoRECwfqOpTRL8qei5hlw=
+			5whuRZGJiIVw1K4R/7nKbL8ZTHpbiiy9OI7dU7cIM9E=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QB4F8LT1pJ+LgHW9eGHTf0/yVY0H8Tg/hpwofrYXU04=
+			JDhFEJiSoYByDBEFuxqmq4d8rqMTIHJjiE3IUl5rULo=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JNLZhqsR/KVSx/o/MkUcaopxMBMe+0c/czXZ9yE+0XA=
+			Ou2BpeWXi1KNCjFdnHnmPf8RbgKA9+2v8g+KKNW7yMk=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fe5RX2pR1uJ5ErNrAbES0e9Rookq7w10ytbGdBpu2cQ=
+			un9xrD65AfMECSSd7vqkv/6fW5kXpY+X2/pGMprJNug=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JNLZhqsR/KVSx/o/MkUcaopxMBMe+0c/czXZ9yE+0XA=
+			Ou2BpeWXi1KNCjFdnHnmPf8RbgKA9+2v8g+KKNW7yMk=
 			</data>
 		</dict>
-		<key>Modules/AppFig.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hG+1Sha9dM4XkTZwY4Bs+n04vJpubhHGg+IhQ3O3STs=
+			YIcCSkTMYuHlRLlUcwdIpzUd9sG13R1U7zvnmZ1dXCE=
 			</data>
 		</dict>
 	</dict>
