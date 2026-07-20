@@ -2229,112 +2229,112 @@
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 39322,
+      "offset": 39561,
       "length": 920,
       "value": "[(\"af\", \"Afrikaans\"), (\"ar\", \"Arabic\"), (\"eu\", \"Basque\"), (\"be\", \"Belarusian\"), (\"bg\", \"Bulgarian\"), (\"ca\", \"Catalan\"), (\"cs\", \"Czech\"), (\"da\", \"Danish\"), (\"nl\", \"Dutch\"), (\"en\", \"English\"), (\"et\", \"Estonian\"), (\"fo\", \"Faroese\"), (\"fi\", \"Finnish\"), (\"fr\", \"French\"), (\"de\", \"German\"), (\"el\", \"Greek\"), (\"he\", \"Hebrew\"), (\"iw\", \"Hebrew\"), (\"hi\", \"Hindi\"), (\"hu\", \"Hungarian\"), (\"is\", \"Icelandic\"), (\"id\", \"Indonesian\"), (\"in\", \"Indonesian\"), (\"it\", \"Italian\"), (\"ja\", \"Japanese\"), (\"ko\", \"Korean\"), (\"lv\", \"Latvian\"), (\"lt\", \"Lithuanian\"), (\"no\", \"Norwegian\"), (\"nb\", \"Norwegian\"), (\"nn\", \"Norwegian\"), (\"pl\", \"Polish\"), (\"pt\", \"Portuguese\"), (\"ro\", \"Romanian\"), (\"ru\", \"Russian\"), (\"sr\", \"SerboCroatian\"), (\"hr\", \"SerboCroatian\"), (\"bs\", \"SerboCroatian\"), (\"sk\", \"Slovak\"), (\"sl\", \"Slovenian\"), (\"es\", \"Spanish\"), (\"sv\", \"Swedish\"), (\"th\", \"Thai\"), (\"tr\", \"Turkish\"), (\"uk\", \"Ukrainian\"), (\"vi\", \"Vietnamese\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 50516,
+      "offset": 50755,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 63499,
+      "offset": 63738,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 63516,
+      "offset": 63755,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87178,
+      "offset": 87417,
       "length": 17,
       "value": "\"user_properties\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87234,
+      "offset": 87473,
       "length": 26,
       "value": "\"user_properties_operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87311,
+      "offset": 87550,
       "length": 17,
       "value": "\"device_operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87585,
+      "offset": 87824,
       "length": 10,
       "value": "\"operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87620,
+      "offset": 87859,
       "length": 10,
       "value": "\"ordering\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87923,
+      "offset": 88162,
       "length": 10,
       "value": "\"operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87983,
+      "offset": 88222,
       "length": 18,
       "value": "\"within_last_days\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88614,
+      "offset": 88853,
       "length": 16,
       "value": "\"schema_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88695,
+      "offset": 88934,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88736,
+      "offset": 88975,
       "length": 15,
       "value": "\"feature_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88775,
+      "offset": 89014,
       "length": 10,
       "value": "\"ttl_secs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88821,
+      "offset": 89060,
       "length": 24,
       "value": "\"min_poll_interval_secs\""
     }
