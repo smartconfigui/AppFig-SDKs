@@ -8,25 +8,25 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol IAnalyticsProvider {
+public protocol AppFigAnalyticsProvider : AnyObject {
   func setUserProperty(key: Swift.String, value: Swift.String)
 }
-public class AmplitudeProvider : AppFigSDK.IAnalyticsProvider {
+public class AppFigAnalyticsAmplitudeProvider : AppFigSDK.AppFigAnalyticsProvider {
   public init(amplitude: ObjectiveC.NSObject)
   public func setUserProperty(key: Swift.String, value: Swift.String)
   @objc deinit
 }
-public class FirebaseProvider : AppFigSDK.IAnalyticsProvider {
+public class AppFigAnalyticsFirebaseProvider : AppFigSDK.AppFigAnalyticsProvider {
   public init(firebase: ObjectiveC.NSObject)
   public func setUserProperty(key: Swift.String, value: Swift.String)
   @objc deinit
 }
-public class MixpanelProvider : AppFigSDK.IAnalyticsProvider {
+public class AppFigAnalyticsMixpanelProvider : AppFigSDK.AppFigAnalyticsProvider {
   public init(mixpanel: ObjectiveC.NSObject)
   public func setUserProperty(key: Swift.String, value: Swift.String)
   @objc deinit
 }
-public class NullAnalyticsProvider : AppFigSDK.IAnalyticsProvider {
+public class AppFigAnalyticsNullProvider : AppFigSDK.AppFigAnalyticsProvider {
   public init()
   public func setUserProperty(key: Swift.String, value: Swift.String)
   @objc deinit
@@ -49,7 +49,8 @@ public class NullAnalyticsProvider : AppFigSDK.IAnalyticsProvider {
   public static func setUserId(_ id: Swift.String?)
   public static func getUserId() -> Swift.String?
   public static func setOnVariantAssigned(_ callback: @escaping (Swift.String, Swift.String) -> Swift.Void)
-  public static func registerAnalyticsProvider(_ provider: any AppFigSDK.IAnalyticsProvider)
+  public static func registerAnalyticsProvider(_ provider: any AppFigSDK.AppFigAnalyticsProvider)
+  public static func unregisterAnalyticsProvider(_ provider: any AppFigSDK.AppFigAnalyticsProvider)
   public static func resetFeature(_ featureName: Swift.String)
   public static func resetAllFeatures()
   public static func addListener(featureName: Swift.String, listener: @escaping (Swift.String, Swift.String?) -> Swift.Void)
