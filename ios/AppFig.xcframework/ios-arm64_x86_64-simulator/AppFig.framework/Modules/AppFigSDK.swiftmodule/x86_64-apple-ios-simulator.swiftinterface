@@ -32,7 +32,7 @@ public class AppFigAnalyticsNullProvider : AppFigSDK.AppFigAnalyticsProvider {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class AppFig {
-  public static func initialize(companyId: Swift.String, tenantId: Swift.String, env: Swift.String, apiKey: Swift.String, autoRefresh: Swift.Bool = true, pollInterval: Foundation.TimeInterval = 43200000, debugMode: Swift.Bool = false, sessionTimeoutMs: Foundation.TimeInterval = 1800000, maxEvents: Swift.Int = 5000, maxEventAgeDays: Swift.Int = 7, onReady: (() -> Swift.Void)? = nil, onRulesUpdated: (() -> Swift.Void)? = nil)
+  public static func initialize(companyId: Swift.String, tenantId: Swift.String, env: Swift.String, apiKey: Swift.String, autoRefresh: Swift.Bool = true, pollInterval: Foundation.TimeInterval = 43200000, debugMode: Swift.Bool = false, sessionTimeoutMs: Foundation.TimeInterval = 1800000, maxEvents: Swift.Int = 5000, maxEventAgeDays: Swift.Int = 7, onReady: (() -> Swift.Void)? = nil, onRulesUpdated: (() -> Swift.Void)? = nil, onError: ((Swift.String) -> Swift.Void)? = nil)
   public static func initializeLocal(rulesJson: Swift.String? = nil, onReady: (() -> Swift.Void)? = nil, onRulesUpdated: (() -> Swift.Void)? = nil)
   public static func logEvent(name: Swift.String, parameters: [Swift.String : Swift.String]? = nil)
   public static func logScreenView(screenName: Swift.String, previousScreen: Swift.String? = nil)
