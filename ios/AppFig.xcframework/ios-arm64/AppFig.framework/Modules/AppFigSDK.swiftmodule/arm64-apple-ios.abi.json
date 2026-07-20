@@ -2236,105 +2236,105 @@
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 50308,
+      "offset": 50383,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 63291,
+      "offset": 63366,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 63308,
+      "offset": 63383,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 86970,
+      "offset": 87045,
       "length": 17,
       "value": "\"user_properties\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87026,
+      "offset": 87101,
       "length": 26,
       "value": "\"user_properties_operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87103,
+      "offset": 87178,
       "length": 17,
       "value": "\"device_operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87377,
+      "offset": 87452,
       "length": 10,
       "value": "\"operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87412,
+      "offset": 87487,
       "length": 10,
       "value": "\"ordering\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87715,
+      "offset": 87790,
       "length": 10,
       "value": "\"operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 87775,
+      "offset": 87850,
       "length": 18,
       "value": "\"within_last_days\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88406,
+      "offset": 88481,
       "length": 16,
       "value": "\"schema_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88487,
+      "offset": 88562,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88528,
+      "offset": 88603,
       "length": 15,
       "value": "\"feature_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88567,
+      "offset": 88642,
       "length": 10,
       "value": "\"ttl_secs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88613,
+      "offset": 88688,
       "length": 24,
       "value": "\"min_poll_interval_secs\""
     }
