@@ -8,6 +8,32 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers final public class AppFigBootstrap {
+  public static var useLocalMode: Swift.Bool
+  public static var localRulesJson: Swift.String?
+  public static var companyId: Swift.String
+  public static var tenantId: Swift.String
+  public static var environment: Swift.String
+  public static var apiKey: Swift.String
+  public static var autoRefresh: Swift.Bool
+  public static var pollInterval: Swift.Double
+  public static var debugMode: Swift.Bool
+  public static var sessionTimeoutMs: Swift.Double
+  public static var maxEvents: Swift.Int
+  public static var maxEventAgeDays: Swift.Int
+  public static var featureName: Swift.String
+  public static var expectedValue: Swift.String
+  public static var onFeatureApplied: ((_ value: Swift.String?, _ matchesExpected: Swift.Bool) -> Swift.Void)?
+  public static func start()
+  public static func logEvent(_ name: Swift.String, parameters: [Swift.String : Swift.String]? = nil)
+  public static func setUserProperty(_ key: Swift.String, _ value: Swift.String)
+  public static func refreshRules()
+  public static var currentValue: Swift.String? {
+    get
+  }
+  public static func applyFeature()
+  @objc deinit
+}
 public protocol AppFigAnalyticsProvider : AnyObject {
   func setUserProperty(key: Swift.String, value: Swift.String)
 }

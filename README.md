@@ -1,6 +1,6 @@
 # AppFig SDKs
 
-Pre-built AppFig SDKs for **iOS**, **Android**, **Unity**, and **React Web**.  
+Pre-built AppFig SDKs for **iOS**, **Android**, **Unity**, and **React Web**.
 Download the SDK for your platform from the folders above and drop it directly into your project.
 
 ## What is AppFig?
@@ -15,5 +15,5 @@ https://appfig.com/docs
 
 ## Support & Feedback
 
-Questions or suggestions?  
+Questions or suggestions?
 Email us anytime: **hello@appfig.com**
