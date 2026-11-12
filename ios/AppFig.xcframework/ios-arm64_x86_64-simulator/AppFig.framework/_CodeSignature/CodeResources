@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		PhY+4LLeQ1eiJBDptb8ILlQPLcw=
+		D5oD/cLFJh0nPzrxvBTUKrnK4NA=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3yhFFfV6zbLuEPl+hEv0rNRayps=
+		TBG1IlV/fGMaJZtvJUkWzHd3ZuY=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		p3Zv8mheYEjQB+c31VGQjy7PkF4=
+		iURTourHPrs4WIuFJo5KMRMN26E=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GMSxEj0+Bh/6Jc42wTrhCJhOnEg=
+		TnDIdorG/IsvcaikGqmutr1szkQ=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		p3Zv8mheYEjQB+c31VGQjy7PkF4=
+		iURTourHPrs4WIuFJo5KMRMN26E=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QGeTFJ07U6+2jhJ2+AdgAKx09G4=
+		5q+WhMVgPpofRXeZnmsqel1tv74=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3yhFFfV6zbLuEPl+hEv0rNRayps=
+		TBG1IlV/fGMaJZtvJUkWzHd3ZuY=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		E1UBafqnuoyQFT1p+dA1LJ3Z9Vg=
+		wwaku2OOXnHVcwNJuuEeTH2OFjo=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		DU9UGhhhmk2hKTwhkyWn6oC5o1c=
+		cM8h3tVCe4Bc2CZJXTSyzyJ/F6A=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		E1UBafqnuoyQFT1p+dA1LJ3Z9Vg=
+		wwaku2OOXnHVcwNJuuEeTH2OFjo=
 		</data>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YSEo5DQmDs5Ckj431MwXLEiczsk=
+		UApbhYo39IkzMTwXZypwWIuD5dQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wB4usoKO9mqMQlW2RMOSJuo3bQC+xVHddBck73C9dyU=
+			he5SXCKOezEOHjzGsYYRRQ7BgFBjXNQPmNbU+XSx36E=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fBGCUvXUjEqrNYsgmfWqjnuXQV+2iJqyVoJqiCHCxU8=
+			4BuaJ975FQhGHn7lSBbi/cnTGxz+fauB4iF4OuatiGw=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9qLoHd4ZIA2jGvRL2gzRdLhj1vb9rJxEIz0FXRPkvsk=
+			lVO9wrsHgeaU6/Z804Y7fii5RJviLsf5c7ygl0La98c=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fBGCUvXUjEqrNYsgmfWqjnuXQV+2iJqyVoJqiCHCxU8=
+			4BuaJ975FQhGHn7lSBbi/cnTGxz+fauB4iF4OuatiGw=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NUk5nYQYc9R8SY2P+1SqrkIS8ItbT1p/4Q2ZeQaQiyM=
+			K85Xfr8NaCxHRFXZ92tEi4yqLvh5osARq0hsjIki8ts=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wB4usoKO9mqMQlW2RMOSJuo3bQC+xVHddBck73C9dyU=
+			he5SXCKOezEOHjzGsYYRRQ7BgFBjXNQPmNbU+XSx36E=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sM/+fljC9loLCeVlILEmbFh+njofr8uO/wvRg12LPAk=
+			a3tbtA1HWVjZTVQwe7KkXZ2tmF1uWF3KmDpU86uhL8w=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Svd5U2D33WfaI41wU9ts7TYGkkSCpyO8QiKmBaaXR1A=
+			3BpEeEpG1Kqob0ttQE1zrk+z9A/JK6YyxKEFdOdJx04=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sM/+fljC9loLCeVlILEmbFh+njofr8uO/wvRg12LPAk=
+			a3tbtA1HWVjZTVQwe7KkXZ2tmF1uWF3KmDpU86uhL8w=
 			</data>
 		</dict>
 		<key>Modules/AppFigSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tzNNmZjK8MAedAmMGbpbJRAWX/g9AiQKu/6lcNgPOU4=
+			ecnPCg+SdALEQNzHiBi6KLD2D54fIHm40s0tf1NrOPg=
 			</data>
 		</dict>
 	</dict>
