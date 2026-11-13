@@ -1,0 +1,96 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios12-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppFigSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers final public class AppFigBootstrap {
+  public static var useLocalMode: Swift.Bool
+  public static var localRulesJson: Swift.String?
+  public static var companyId: Swift.String
+  public static var tenantId: Swift.String
+  public static var environment: Swift.String
+  public static var apiKey: Swift.String
+  public static var autoRefresh: Swift.Bool
+  public static var pollInterval: Swift.Double
+  public static var debugMode: Swift.Bool
+  public static var sessionTimeoutMs: Swift.Double
+  public static var maxEvents: Swift.Int
+  public static var maxEventAgeDays: Swift.Int
+  public static var featureName: Swift.String
+  public static var expectedValue: Swift.String
+  public static var onFeatureApplied: ((_ value: Swift.String?, _ matchesExpected: Swift.Bool) -> Swift.Void)?
+  public static func start()
+  public static func logEvent(_ name: Swift.String, parameters: [Swift.String : Swift.String]? = nil)
+  public static func setUserProperty(_ key: Swift.String, _ value: Swift.String)
+  public static func refreshRules()
+  public static var currentValue: Swift.String? {
+    get
+  }
+  public static func applyFeature()
+  @objc deinit
+}
+public protocol AppFigAnalyticsProvider : AnyObject {
+  func setUserProperty(key: Swift.String, value: Swift.String)
+}
+public class AppFigAnalyticsAmplitudeProvider : AppFigSDK.AppFigAnalyticsProvider {
+  public init(amplitude: ObjectiveC.NSObject)
+  public func setUserProperty(key: Swift.String, value: Swift.String)
+  @objc deinit
+}
+public class AppFigAnalyticsFirebaseProvider : AppFigSDK.AppFigAnalyticsProvider {
+  public init(firebase: ObjectiveC.NSObject)
+  public func setUserProperty(key: Swift.String, value: Swift.String)
+  @objc deinit
+}
+public class AppFigAnalyticsMixpanelProvider : AppFigSDK.AppFigAnalyticsProvider {
+  public init(mixpanel: ObjectiveC.NSObject)
+  public func setUserProperty(key: Swift.String, value: Swift.String)
+  @objc deinit
+}
+public class AppFigAnalyticsNullProvider : AppFigSDK.AppFigAnalyticsProvider {
+  public init()
+  public func setUserProperty(key: Swift.String, value: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AppFig {
+  public static func initialize(companyId: Swift.String, tenantId: Swift.String, env: Swift.String, apiKey: Swift.String, autoRefresh: Swift.Bool = true, pollInterval: Foundation.TimeInterval = 43200000, debugMode: Swift.Bool = false, sessionTimeoutMs: Foundation.TimeInterval = 1800000, maxEvents: Swift.Int = 5000, maxEventAgeDays: Swift.Int = 7, onReady: (() -> Swift.Void)? = nil, onRulesUpdated: (() -> Swift.Void)? = nil, onError: ((Swift.String) -> Swift.Void)? = nil)
+  public static func initializeLocal(rulesJson: Swift.String? = nil, onReady: (() -> Swift.Void)? = nil, onRulesUpdated: (() -> Swift.Void)? = nil)
+  public static func logEvent(name: Swift.String, parameters: [Swift.String : Swift.String]? = nil)
+  public static func logScreenView(screenName: Swift.String, previousScreen: Swift.String? = nil)
+  public static func setUserProperty(key: Swift.String, value: Swift.String)
+  public static func removeUserProperty(key: Swift.String)
+  public static func setDeviceProperty(key: Swift.String, value: Swift.String)
+  public static func removeDeviceProperty(key: Swift.String)
+  public static func setAppVersion(_ version: Swift.String)
+  @available(*, deprecated, message: "Country is now automatically detected from CDN response headers during rules fetch.")
+  public static func detectAndSetCountry(completion: ((Swift.String?) -> Swift.Void)? = nil)
+  public static func isFeatureEnabled(_ feature: Swift.String) -> Swift.Bool
+  public static func getFeatureValue(_ feature: Swift.String) -> Swift.String?
+  public static func hasRulesLoaded() -> Swift.Bool
+  public static func setUserId(_ id: Swift.String?)
+  public static func getUserId() -> Swift.String?
+  public static func setOnVariantAssigned(_ callback: @escaping (Swift.String, Swift.String) -> Swift.Void)
+  public static func registerAnalyticsProvider(_ provider: any AppFigSDK.AppFigAnalyticsProvider)
+  public static func unregisterAnalyticsProvider(_ provider: any AppFigSDK.AppFigAnalyticsProvider)
+  public static func resetFeature(_ featureName: Swift.String)
+  public static func resetAllFeatures()
+  public static func addListener(featureName: Swift.String, listener: @escaping (Swift.String, Swift.String?) -> Swift.Void)
+  public static func removeAllListeners(featureName: Swift.String)
+  public static func clearAllListeners()
+  public static func resetSession()
+  public static func updateActivity()
+  @available(*, deprecated, message: "Use the autoRefresh parameter in initialize() instead")
+  public static func setAutoRefresh(enabled: Swift.Bool)
+  @available(*, deprecated, message: "Use the pollInterval parameter in initialize() instead")
+  public static func setPollInterval(_ intervalMs: Foundation.TimeInterval)
+  public static func refreshRules()
+  public static func clearCache(companyId: Swift.String, tenantId: Swift.String, env: Swift.String)
+  public static func clearEventHistory()
+  public static func getEventHistoryStats() -> [Swift.String : Any]
+  @objc deinit
+}

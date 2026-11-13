@@ -1,7 +1,24 @@
 # AppFig SDKs
 
 Pre-built AppFig SDKs for **iOS**, **Android**, **Unity**, and **React Web**.
-Download the SDK for your platform from the folders above and drop it directly into your project.
+Install with your package manager, or download the SDK for your platform from the folders above.
+
+## Install
+
+**iOS, Swift Package Manager:** in Xcode, File > Add Package Dependencies, then enter
+`https://github.com/smartconfigui/AppFig-SDKs`
+
+**iOS, CocoaPods:**
+
+    pod 'AppFigSDK', :git => 'https://github.com/smartconfigui/AppFig-SDKs.git', :tag => 'v2.0.1'
+
+**Android, Gradle:** add `maven { url 'https://jitpack.io' }` to your repositories, then
+
+    implementation 'com.github.smartconfigui:AppFig-SDKs:v2.0.1'
+
+**Flutter:** see [`flutter/`](flutter/README.md).
+
+In Swift: `import AppFigSDK`. In Kotlin: `import com.appfig.sdk.AppFig`.
 
 ## What is AppFig?
 

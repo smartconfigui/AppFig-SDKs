@@ -1,0 +1,9 @@
+# JitPack serves the pre-built Android SDK from this repository:
+#   implementation 'com.github.smartconfigui:AppFig-SDKs:<tag>'
+# Nothing is compiled here. The AAR is installed with a POM that declares the
+# libraries it needs, so they arrive with it.
+jdk:
+  - openjdk17
+install:
+  - sed -e "s/__GROUP__/$GROUP/" -e "s/__ARTIFACT__/$ARTIFACT/" -e "s/__VERSION__/$VERSION/" android/pom.template.xml > /tmp/appfig-pom.xml
+  - mvn install:install-file -Dfile=android/AppFigAndroidSDK.aar -DpomFile=/tmp/appfig-pom.xml -Dpackaging=aar
