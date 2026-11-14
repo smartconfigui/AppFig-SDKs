@@ -1984,6 +1984,74 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackExperimentAssigned",
+            "printedName": "trackExperimentAssigned(experimentKey:variantName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB17AnalyticsProviderP23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "mangledName": "$s9AppFigSDK0aB17AnalyticsProviderP23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "moduleName": "AppFigSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : AppFigSDK.AppFigAnalyticsProvider>",
+            "sugared_genericSig": "<Self where Self : AppFigSDK.AppFigAnalyticsProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackExperimentAssigned",
+            "printedName": "trackExperimentAssigned(experimentKey:variantName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB17AnalyticsProviderPAAE23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "mangledName": "$s9AppFigSDK0aB17AnalyticsProviderPAAE23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "moduleName": "AppFigSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : AppFigSDK.AppFigAnalyticsProvider>",
+            "sugared_genericSig": "<Self where Self : AppFigSDK.AppFigAnalyticsProvider>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -2074,6 +2142,39 @@
             "moduleName": "AppFigSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackExperimentAssigned",
+            "printedName": "trackExperimentAssigned(experimentKey:variantName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB26AnalyticsAmplitudeProviderC23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "mangledName": "$s9AppFigSDK0aB26AnalyticsAmplitudeProviderC23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -2173,6 +2274,39 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackExperimentAssigned",
+            "printedName": "trackExperimentAssigned(experimentKey:variantName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB25AnalyticsFirebaseProviderC23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "mangledName": "$s9AppFigSDK0aB25AnalyticsFirebaseProviderC23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2268,6 +2402,39 @@
             "moduleName": "AppFigSDK",
             "declAttributes": [
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackExperimentAssigned",
+            "printedName": "trackExperimentAssigned(experimentKey:variantName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AppFigSDK0aB25AnalyticsMixpanelProviderC23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "mangledName": "$s9AppFigSDK0aB25AnalyticsMixpanelProviderC23trackExperimentAssigned13experimentKey11variantNameySS_SStF",
+            "moduleName": "AppFigSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -3777,595 +3944,609 @@
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1930,
+      "offset": 2333,
       "length": 20,
       "value": "\"setUserProperties:\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 2820,
+      "offset": 3703,
       "length": 26,
       "value": "\"setUserProperty:forName:\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3597,
+      "offset": 5006,
       "length": 6,
       "value": "\"set:\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 4780,
+      "offset": 6679,
       "length": 8,
       "value": "43200000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 4864,
+      "offset": 6763,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 4928,
+      "offset": 6827,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 4981,
+      "offset": 6880,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5030,
+      "offset": 6929,
       "length": 16,
       "value": "\"com.appfig.sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5133,
+      "offset": 7032,
       "length": 22,
       "value": "\"com.appfig.sdk.queue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5328,
+      "offset": 7227,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5375,
+      "offset": 7274,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5500,
+      "offset": 7399,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5545,
+      "offset": 7444,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5585,
+      "offset": 7484,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5628,
+      "offset": 7527,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5675,
+      "offset": 7574,
       "length": 31,
       "value": "\"https:\/\/rules-prod.appfig.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5751,
+      "offset": 7650,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5808,
+      "offset": 7707,
       "length": 8,
       "value": "43200000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5867,
+      "offset": 7766,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 5928,
+      "offset": 7827,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5977,
+      "offset": 7876,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 6023,
+      "offset": 7922,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 6074,
+      "offset": 7973,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 6150,
+      "offset": 8049,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 6205,
+      "offset": 8104,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 6267,
+      "offset": 8166,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 6331,
+      "offset": 8230,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 6392,
+      "offset": 8291,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 6449,
+      "offset": 8348,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 6535,
+      "offset": 8434,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6588,
+      "offset": 8487,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 6664,
+      "offset": 8563,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 6712,
+      "offset": 8611,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 6767,
+      "offset": 8666,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 6843,
+      "offset": 8742,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6896,
+      "offset": 8795,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 7052,
+      "offset": 8951,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 7132,
+      "offset": 9031,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 7214,
+      "offset": 9113,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 7281,
+      "offset": 9180,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 7348,
+      "offset": 9247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 7541,
+      "offset": 9440,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 7684,
+      "offset": 9583,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 7753,
+      "offset": 9652,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 7838,
+      "offset": 9737,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 7911,
+      "offset": 9810,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 7986,
+      "offset": 9885,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 8048,
+      "offset": 9947,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 8170,
+      "offset": 10069,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 8250,
+      "offset": 10149,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 8332,
+      "offset": 10231,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8384,
+      "offset": 10283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 8488,
+      "offset": 10387,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8551,
+      "offset": 10450,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8603,
+      "offset": 10502,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8671,
+      "offset": 10570,
       "length": 6,
       "value": "600000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8757,
+      "offset": 10656,
       "length": 8,
       "value": "43200000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 9137,
+      "offset": 11036,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 9263,
+      "offset": 11207,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "Dictionary",
+      "offset": 11372,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
+      "kind": "Dictionary",
+      "offset": 11506,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 9459,
+      "offset": 11702,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 9523,
+      "offset": 11766,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9614,
+      "offset": 11857,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Array",
-      "offset": 9721,
+      "offset": 11964,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12004,
+      "offset": 14247,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 12047,
+      "offset": 14290,
       "length": 8,
       "value": "43200000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12083,
+      "offset": 14326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 12131,
+      "offset": 14374,
       "length": 7,
       "value": "1800000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 12165,
+      "offset": 14408,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 12202,
+      "offset": 14445,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "Dictionary",
-      "offset": 39662,
+      "offset": 44125,
       "length": 920,
       "value": "[(\"af\", \"Afrikaans\"), (\"ar\", \"Arabic\"), (\"eu\", \"Basque\"), (\"be\", \"Belarusian\"), (\"bg\", \"Bulgarian\"), (\"ca\", \"Catalan\"), (\"cs\", \"Czech\"), (\"da\", \"Danish\"), (\"nl\", \"Dutch\"), (\"en\", \"English\"), (\"et\", \"Estonian\"), (\"fo\", \"Faroese\"), (\"fi\", \"Finnish\"), (\"fr\", \"French\"), (\"de\", \"German\"), (\"el\", \"Greek\"), (\"he\", \"Hebrew\"), (\"iw\", \"Hebrew\"), (\"hi\", \"Hindi\"), (\"hu\", \"Hungarian\"), (\"is\", \"Icelandic\"), (\"id\", \"Indonesian\"), (\"in\", \"Indonesian\"), (\"it\", \"Italian\"), (\"ja\", \"Japanese\"), (\"ko\", \"Korean\"), (\"lv\", \"Latvian\"), (\"lt\", \"Lithuanian\"), (\"no\", \"Norwegian\"), (\"nb\", \"Norwegian\"), (\"nn\", \"Norwegian\"), (\"pl\", \"Polish\"), (\"pt\", \"Portuguese\"), (\"ro\", \"Romanian\"), (\"ru\", \"Russian\"), (\"sr\", \"SerboCroatian\"), (\"hr\", \"SerboCroatian\"), (\"bs\", \"SerboCroatian\"), (\"sk\", \"Slovak\"), (\"sl\", \"Slovenian\"), (\"es\", \"Spanish\"), (\"sv\", \"Swedish\"), (\"th\", \"Thai\"), (\"tr\", \"Turkish\"), (\"uk\", \"Ukrainian\"), (\"vi\", \"Vietnamese\")]"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 51566,
+      "offset": 56029,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 64553,
+      "offset": 71274,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 64570,
+      "offset": 71291,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88217,
+      "offset": 94938,
       "length": 17,
       "value": "\"user_properties\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88273,
+      "offset": 94994,
       "length": 26,
       "value": "\"user_properties_operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88350,
+      "offset": 95071,
       "length": 17,
       "value": "\"device_operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88624,
+      "offset": 95345,
       "length": 10,
       "value": "\"operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88659,
+      "offset": 95380,
       "length": 10,
       "value": "\"ordering\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 88962,
+      "offset": 95683,
       "length": 10,
       "value": "\"operator\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 89022,
+      "offset": 95743,
       "length": 18,
       "value": "\"within_last_days\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 89653,
+      "offset": 96374,
       "length": 16,
       "value": "\"schema_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 89734,
+      "offset": 96455,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 89775,
+      "offset": 96496,
       "length": 15,
       "value": "\"feature_count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 89814,
+      "offset": 96535,
       "length": 10,
       "value": "\"ttl_secs\""
     },
     {
       "filePath": "\/Users\/runner\/work\/AppFig-SDKs-private\/AppFig-SDKs-private\/ios\/AppFig\/AppFig\/AppFigIOSSDK.swift",
       "kind": "StringLiteral",
-      "offset": 89860,
+      "offset": 96581,
       "length": 24,
       "value": "\"min_poll_interval_secs\""
     }

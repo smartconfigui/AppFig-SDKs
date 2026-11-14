@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Handler
 import android.os.Looper
 import com.appfig.sdk.AppFig
+import com.appfig.sdk.IAnalyticsProvider
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -13,6 +14,10 @@ class AppfigFlutterPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
     private lateinit var channel: MethodChannel
     private lateinit var context: Context
     private val main = Handler(Looper.getMainLooper())
+
+    // Forwards what the native SDK reports about experiments to Dart, where the app
+    // hands it to its analytics tool (see AppFig.connectAnalytics in Dart).
+    private var analyticsBridge: IAnalyticsProvider? = null
 
     override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
         context = binding.applicationContext
@@ -47,8 +52,24 @@ class AppfigFlutterPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
             "getUserId" -> result.success(AppFig.getUserId())
             "refreshRules" -> { AppFig.refreshRules(); result.success(null) }
             "resetSession" -> { AppFig.resetSession(); result.success(null) }
+            "connectAnalytics" -> { connectAnalytics(); result.success(null) }
             else -> result.notImplemented()
         }
+    }
+
+    private fun connectAnalytics() {
+        if (analyticsBridge != null) return
+        val bridge = object : IAnalyticsProvider {
+            override fun setUserProperty(key: String, value: String) {
+                main.post { channel.invokeMethod("analyticsUserProperty", mapOf("key" to key, "value" to value)) }
+            }
+
+            override fun trackExperimentAssigned(experimentKey: String, variantName: String) {
+                main.post { channel.invokeMethod("analyticsExperimentAssigned", mapOf("experimentKey" to experimentKey, "variantName" to variantName)) }
+            }
+        }
+        analyticsBridge = bridge
+        AppFig.registerAnalyticsProvider(bridge)
     }
 
     private fun init(call: MethodCall, result: MethodChannel.Result) {

@@ -14,7 +14,7 @@ dependencies:
     git:
       url: https://github.com/smartconfigui/AppFig-SDKs.git
       path: flutter
-      ref: v2.0.1
+      ref: v2.1.0
 ```
 
 Nothing else is needed: the Android SDK is pulled from JitPack by the plugin and
@@ -45,12 +45,35 @@ AppFig.onRulesUpdated.listen((_) => refreshLimits());
 `init` completes when rules are available or after `readyTimeout` (5 seconds by
 default), so values read right after it are real.
 
+## A/B tests and analytics
+
+A/B tests work without a user id: a device without one is assigned by its
+device id, and an assignment stays with the device across restarts and sign-in.
+Call `setUserId` before `init` if a signed-in user should get the same variant
+on every device.
+
+To see experiments in your analytics tool, connect it once at startup:
+
+```dart
+AppFig.connectAnalytics(
+  setUserProperty: (name, value) =>
+      FirebaseAnalytics.instance.setUserProperty(name: name, value: value.isEmpty ? null : value),
+  logEvent: (name, parameters) =>
+      FirebaseAnalytics.instance.logEvent(name: name, parameters: parameters),
+);
+```
+
+`setUserProperty` receives one property per running experiment
+(`af_<experiment>` = variant). `logEvent` receives `appfig_experiment_assigned`
+(`experiment_key`, `variant`) once per device and experiment. The two callbacks
+can call any analytics tool.
+
 ## API
 
 `init`, `getFeatureValue`, `isFeatureEnabled`, `hasRulesLoaded`, `logEvent`,
 `logScreenView`, `setUserProperty`, `removeUserProperty`, `setDeviceProperty`,
 `removeDeviceProperty`, `setAppVersion`, `setUserId`, `getUserId`,
-`refreshRules`, `resetSession`, and the streams `onRulesUpdated` and
-`onVariantAssigned`.
+`refreshRules`, `resetSession`, `connectAnalytics`, and the streams
+`onRulesUpdated` and `onVariantAssigned`.
 
 Documentation: https://appfig.com/docs

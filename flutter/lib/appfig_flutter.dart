@@ -31,6 +31,8 @@ class AppFig {
   static final StreamController<void> _rulesUpdated = StreamController<void>.broadcast();
   static final StreamController<AppFigVariant> _variants = StreamController<AppFigVariant>.broadcast();
   static bool _handlerSet = false;
+  static void Function(String name, String value)? _analyticsSetUserProperty;
+  static void Function(String name, Map<String, Object> parameters)? _analyticsLogEvent;
 
   static void _ensureHandler() {
     if (_handlerSet) return;
@@ -43,6 +45,17 @@ class AppFig {
         case 'onVariantAssigned':
           final args = (call.arguments as Map?) ?? const {};
           _variants.add(AppFigVariant('${args['experimentKey']}', '${args['variantName']}'));
+          break;
+        case 'analyticsUserProperty':
+          final args = (call.arguments as Map?) ?? const {};
+          _analyticsSetUserProperty?.call('${args['key']}', '${args['value']}');
+          break;
+        case 'analyticsExperimentAssigned':
+          final args = (call.arguments as Map?) ?? const {};
+          _analyticsLogEvent?.call('appfig_experiment_assigned', {
+            'experiment_key': '${args['experimentKey']}',
+            'variant': '${args['variantName']}',
+          });
           break;
       }
     });
@@ -106,8 +119,10 @@ class AppFig {
 
   static Future<void> setAppVersion(String version) => _channel.invokeMethod<void>('setAppVersion', {'version': version});
 
-  /// A stable id for this user. A/B test assignments are per user id; changing
-  /// it re-evaluates them. Pass null to clear it.
+  /// A stable id for this user. Optional: without it, A/B tests are assigned per
+  /// device. An experiment this device is already in keeps its variant when the
+  /// id changes; to have a signed-in user get the same variant on every device,
+  /// call this before [init]. Pass null to clear it.
   static Future<void> setUserId(String? userId) => _channel.invokeMethod<void>('setUserId', {'userId': userId});
 
   static Future<String?> getUserId() => _channel.invokeMethod<String>('getUserId');
@@ -121,6 +136,34 @@ class AppFig {
   static Stream<void> get onRulesUpdated {
     _ensureHandler();
     return _rulesUpdated.stream;
+  }
+
+  /// Sends A/B test assignments to your analytics tool. Call once, at startup.
+  ///
+  /// - [setUserProperty] receives one property per running experiment
+  ///   (`af_<experiment>` = variant; an empty value when the experiment ends).
+  /// - [logEvent] receives `appfig_experiment_assigned` with `experiment_key` and
+  ///   `variant`, once per device and experiment, also across app restarts.
+  ///
+  /// ```dart
+  /// AppFig.connectAnalytics(
+  ///   setUserProperty: (name, value) =>
+  ///       FirebaseAnalytics.instance.setUserProperty(name: name, value: value.isEmpty ? null : value),
+  ///   logEvent: (name, parameters) =>
+  ///       FirebaseAnalytics.instance.logEvent(name: name, parameters: parameters),
+  /// );
+  /// ```
+  ///
+  /// Works the same whether or not a user id is set. It can be called before or
+  /// after [init]; assignments made earlier are delivered when it is called.
+  static Future<void> connectAnalytics({
+    required void Function(String name, String value) setUserProperty,
+    required void Function(String name, Map<String, Object> parameters) logEvent,
+  }) {
+    _ensureHandler();
+    _analyticsSetUserProperty = setUserProperty;
+    _analyticsLogEvent = logEvent;
+    return _channel.invokeMethod<void>('connectAnalytics');
   }
 
   /// Fires when the SDK assigns this user to an A/B test variant.

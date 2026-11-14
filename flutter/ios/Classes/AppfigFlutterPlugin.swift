@@ -2,9 +2,34 @@ import AppFigSDK
 import Flutter
 import UIKit
 
+/// Forwards what the native SDK reports about experiments to Dart, where the app
+/// hands it to its analytics tool (see AppFig.connectAnalytics in Dart).
+final class AppfigAnalyticsBridge: AppFigAnalyticsProvider {
+  private let channel: FlutterMethodChannel
+
+  init(channel: FlutterMethodChannel) {
+    self.channel = channel
+  }
+
+  func setUserProperty(key: String, value: String) {
+    let channel = self.channel
+    DispatchQueue.main.async {
+      channel.invokeMethod("analyticsUserProperty", arguments: ["key": key, "value": value])
+    }
+  }
+
+  func trackExperimentAssigned(experimentKey: String, variantName: String) {
+    let channel = self.channel
+    DispatchQueue.main.async {
+      channel.invokeMethod("analyticsExperimentAssigned", arguments: ["experimentKey": experimentKey, "variantName": variantName])
+    }
+  }
+}
+
 /// Bridges the Dart API (lib/appfig_flutter.dart) to the native AppFig iOS SDK.
 public class AppfigFlutterPlugin: NSObject, FlutterPlugin {
   private let channel: FlutterMethodChannel
+  private var analyticsBridge: AppfigAnalyticsBridge?
 
   init(channel: FlutterMethodChannel) {
     self.channel = channel
@@ -69,6 +94,13 @@ public class AppfigFlutterPlugin: NSObject, FlutterPlugin {
       result(nil)
     case "resetSession":
       AppFig.resetSession()
+      result(nil)
+    case "connectAnalytics":
+      if analyticsBridge == nil {
+        let bridge = AppfigAnalyticsBridge(channel: channel)
+        analyticsBridge = bridge
+        AppFig.registerAnalyticsProvider(bridge)
+      }
       result(nil)
     default:
       result(FlutterMethodNotImplemented)
