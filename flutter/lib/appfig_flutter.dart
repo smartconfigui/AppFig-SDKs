@@ -52,9 +52,16 @@ class AppFig {
           break;
         case 'analyticsExperimentAssigned':
           final args = (call.arguments as Map?) ?? const {};
-          _analyticsLogEvent?.call('appfig_experiment_assigned', {
-            'experiment_key': '${args['experimentKey']}',
+          _analyticsLogEvent?.call('appfig_experiment', {
+            'experiment': '${args['experimentKey']}',
             'variant': '${args['variantName']}',
+          });
+          break;
+        case 'analyticsFeatureSeen':
+          final args = (call.arguments as Map?) ?? const {};
+          _analyticsLogEvent?.call('appfig_feature', {
+            'feature': '${args['featureName']}',
+            'feature_value': '${args['value']}',
           });
           break;
       }
@@ -138,12 +145,14 @@ class AppFig {
     return _rulesUpdated.stream;
   }
 
-  /// Sends A/B test assignments to your analytics tool. Call once, at startup.
+  /// Sends A/B test assignments and feature values to your analytics tool. Call once, at startup.
   ///
   /// - [setUserProperty] receives one property per running experiment
   ///   (`af_<experiment>` = variant; an empty value when the experiment ends).
-  /// - [logEvent] receives `appfig_experiment_assigned` with `experiment_key` and
-  ///   `variant`, once per device and experiment, also across app restarts.
+  /// - [logEvent] receives two events, each once per device, also across app restarts:
+  ///   `appfig_experiment` (`experiment`, `variant`) when the device enters an experiment,
+  ///   and `appfig_feature` (`feature`, `feature_value`) for each feature the app reads, sent
+  ///   again only when the value this device gets changes.
   ///
   /// ```dart
   /// AppFig.connectAnalytics(

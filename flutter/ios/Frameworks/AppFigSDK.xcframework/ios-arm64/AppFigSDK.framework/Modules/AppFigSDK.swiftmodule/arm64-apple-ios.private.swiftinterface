@@ -37,26 +37,31 @@ import _SwiftConcurrencyShims
 public protocol AppFigAnalyticsProvider : AnyObject {
   func setUserProperty(key: Swift.String, value: Swift.String)
   func trackExperimentAssigned(experimentKey: Swift.String, variantName: Swift.String)
+  func trackFeatureSeen(featureName: Swift.String, value: Swift.String)
 }
 extension AppFigSDK.AppFigAnalyticsProvider {
   public func trackExperimentAssigned(experimentKey: Swift.String, variantName: Swift.String)
+  public func trackFeatureSeen(featureName: Swift.String, value: Swift.String)
 }
 public class AppFigAnalyticsAmplitudeProvider : AppFigSDK.AppFigAnalyticsProvider {
   public init(amplitude: ObjectiveC.NSObject)
   public func setUserProperty(key: Swift.String, value: Swift.String)
   public func trackExperimentAssigned(experimentKey: Swift.String, variantName: Swift.String)
+  public func trackFeatureSeen(featureName: Swift.String, value: Swift.String)
   @objc deinit
 }
 public class AppFigAnalyticsFirebaseProvider : AppFigSDK.AppFigAnalyticsProvider {
   public init(firebase: ObjectiveC.NSObject)
   public func setUserProperty(key: Swift.String, value: Swift.String)
   public func trackExperimentAssigned(experimentKey: Swift.String, variantName: Swift.String)
+  public func trackFeatureSeen(featureName: Swift.String, value: Swift.String)
   @objc deinit
 }
 public class AppFigAnalyticsMixpanelProvider : AppFigSDK.AppFigAnalyticsProvider {
   public init(mixpanel: ObjectiveC.NSObject)
   public func setUserProperty(key: Swift.String, value: Swift.String)
   public func trackExperimentAssigned(experimentKey: Swift.String, variantName: Swift.String)
+  public func trackFeatureSeen(featureName: Swift.String, value: Swift.String)
   @objc deinit
 }
 public class AppFigAnalyticsNullProvider : AppFigSDK.AppFigAnalyticsProvider {

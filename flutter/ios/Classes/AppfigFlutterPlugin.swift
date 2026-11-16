@@ -24,6 +24,13 @@ final class AppfigAnalyticsBridge: AppFigAnalyticsProvider {
       channel.invokeMethod("analyticsExperimentAssigned", arguments: ["experimentKey": experimentKey, "variantName": variantName])
     }
   }
+
+  func trackFeatureSeen(featureName: String, value: String) {
+    let channel = self.channel
+    DispatchQueue.main.async {
+      channel.invokeMethod("analyticsFeatureSeen", arguments: ["featureName": featureName, "value": value])
+    }
+  }
 }
 
 /// Bridges the Dart API (lib/appfig_flutter.dart) to the native AppFig iOS SDK.

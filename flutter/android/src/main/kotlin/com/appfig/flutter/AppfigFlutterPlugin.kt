@@ -67,6 +67,10 @@ class AppfigFlutterPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
             override fun trackExperimentAssigned(experimentKey: String, variantName: String) {
                 main.post { channel.invokeMethod("analyticsExperimentAssigned", mapOf("experimentKey" to experimentKey, "variantName" to variantName)) }
             }
+
+            override fun trackFeatureSeen(featureName: String, value: String) {
+                main.post { channel.invokeMethod("analyticsFeatureSeen", mapOf("featureName" to featureName, "value" to value)) }
+            }
         }
         analyticsBridge = bridge
         AppFig.registerAnalyticsProvider(bridge)

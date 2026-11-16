@@ -14,7 +14,7 @@ dependencies:
     git:
       url: https://github.com/smartconfigui/AppFig-SDKs.git
       path: flutter
-      ref: v2.1.0
+      ref: v2.2.0
 ```
 
 Nothing else is needed: the Android SDK is pulled from JitPack by the plugin and
@@ -64,9 +64,14 @@ AppFig.connectAnalytics(
 ```
 
 `setUserProperty` receives one property per running experiment
-(`af_<experiment>` = variant). `logEvent` receives `appfig_experiment_assigned`
-(`experiment_key`, `variant`) once per device and experiment. The two callbacks
-can call any analytics tool.
+(`af_<experiment>` = variant). `logEvent` receives two events, each once per device:
+
+| Event | Parameters | When |
+|---|---|---|
+| `appfig_experiment` | `experiment`, `variant` | The device enters an experiment. |
+| `appfig_feature` | `feature`, `feature_value` | The app reads a feature. Sent again only when the value this device gets changes. |
+
+A feature the app never reads sends nothing. The two callbacks can call any analytics tool.
 
 ## API
 
