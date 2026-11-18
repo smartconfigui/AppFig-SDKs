@@ -106,6 +106,7 @@ class AppfigFlutterPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
             autoRefresh = call.argument<Boolean>("autoRefresh") ?: true,
             pollInterval = (call.argument<Number>("pollIntervalMs") ?: 43200000).toLong(),
             debugMode = call.argument<Boolean>("debugMode") ?: false,
+            cdnBaseUrl = call.argument<String>("cdnBaseUrl"),
             onReady = { main.post(answer) },
             onRulesUpdated = {
                 main.post {

@@ -82,6 +82,7 @@ class AppFig {
     Duration pollInterval = const Duration(hours: 12),
     bool debugMode = false,
     Duration readyTimeout = const Duration(seconds: 5),
+    String? cdnBaseUrl,
   }) {
     _ensureHandler();
     return _channel.invokeMethod<void>('init', {
@@ -93,6 +94,7 @@ class AppFig {
       'pollIntervalMs': pollInterval.inMilliseconds,
       'debugMode': debugMode,
       'readyTimeoutMs': readyTimeout.inMilliseconds,
+      if (cdnBaseUrl != null) 'cdnBaseUrl': cdnBaseUrl,
     });
   }
 

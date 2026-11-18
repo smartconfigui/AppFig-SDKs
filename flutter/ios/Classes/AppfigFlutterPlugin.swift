@@ -149,7 +149,8 @@ public class AppfigFlutterPlugin: NSObject, FlutterPlugin {
       onRulesUpdated: {
         DispatchQueue.main.async { channel.invokeMethod("onRulesUpdated", arguments: nil) }
         answer()
-      }
+      },
+      cdnBaseUrl: args["cdnBaseUrl"] as? String
     )
     let timeoutMs = (args["readyTimeoutMs"] as? NSNumber)?.doubleValue ?? 5000
     DispatchQueue.main.asyncAfter(deadline: .now() + timeoutMs / 1000) { answer() }

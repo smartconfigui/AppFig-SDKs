@@ -1,6 +1,6 @@
 name: appfig_flutter
 description: AppFig for Flutter. Feature flags, remote config and A/B tests evaluated on the device, through the native AppFig SDKs for Android and iOS.
-version: 2.2.0
+version: 2.3.0
 homepage: https://appfig.com
 repository: https://github.com/smartconfigui/AppFig-SDKs
 
