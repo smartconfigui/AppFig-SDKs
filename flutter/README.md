@@ -14,7 +14,7 @@ dependencies:
     git:
       url: https://github.com/smartconfigui/AppFig-SDKs.git
       path: flutter
-      ref: v2.3.0
+      ref: v2.4.0
 ```
 
 Nothing else is needed: the Android SDK is pulled from JitPack by the plugin and

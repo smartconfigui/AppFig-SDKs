@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'appfig_flutter'
-  s.version          = '2.3.0'
+  s.version          = '2.4.0'
   s.summary          = 'AppFig for Flutter (iOS side).'
   s.description      = 'Bridges the appfig_flutter Dart API to the native AppFig iOS SDK.'
   s.homepage         = 'https://appfig.com'

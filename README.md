@@ -10,11 +10,11 @@ Install with your package manager, or download the SDK for your platform from th
 
 **iOS, CocoaPods:**
 
-    pod 'AppFigSDK', :git => 'https://github.com/smartconfigui/AppFig-SDKs.git', :tag => 'v2.3.0'
+    pod 'AppFigSDK', :git => 'https://github.com/smartconfigui/AppFig-SDKs.git', :tag => 'v2.4.0'
 
 **Android, Gradle:** add `maven { url 'https://jitpack.io' }` to your repositories, then
 
-    implementation 'com.github.smartconfigui:AppFig-SDKs:v2.3.0'
+    implementation 'com.github.smartconfigui:AppFig-SDKs:v2.4.0'
 
 **Flutter:** see [`flutter/`](flutter/README.md).
 
