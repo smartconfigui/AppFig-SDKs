@@ -1,5 +1,5 @@
 group 'com.appfig.flutter'
-version '2.4.0'
+version '2.5.0'
 
 buildscript {
     ext.kotlin_version = '1.9.22'
@@ -45,5 +45,5 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.smartconfigui:AppFig-SDKs:v2.4.0'
+    implementation 'com.github.smartconfigui:AppFig-SDKs:v2.5.0'
 }

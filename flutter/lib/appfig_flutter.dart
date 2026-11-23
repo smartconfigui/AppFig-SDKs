@@ -11,6 +11,7 @@
 library appfig_flutter;
 
 import 'dart:async';
+import 'dart:developer' as developer;
 
 import 'package:flutter/services.dart';
 
@@ -31,8 +32,54 @@ class AppFig {
   static final StreamController<void> _rulesUpdated = StreamController<void>.broadcast();
   static final StreamController<AppFigVariant> _variants = StreamController<AppFigVariant>.broadcast();
   static bool _handlerSet = false;
-  static void Function(String name, String value)? _analyticsSetUserProperty;
-  static void Function(String name, Map<String, Object> parameters)? _analyticsLogEvent;
+  static FutureOr<void> Function(String name, String value)? _analyticsSetUserProperty;
+  static FutureOr<void> Function(String name, Map<String, Object> parameters)? _analyticsLogEvent;
+  static bool _unsupported = false;
+
+  /// Whether this platform has the AppFig SDK. False on desktop and web: there every call does nothing and
+  /// [getFeatureValue] returns null, so the app runs on the values in its code.
+  static bool get isSupported => !_unsupported;
+
+  // A failing AppFig call never stops the app. Where the platform has no AppFig SDK (desktop, web) calls do
+  // nothing; an error from the native SDK is logged and the call returns null.
+  static Future<T?> _invoke<T>(String method, [Object? arguments]) async {
+    if (_unsupported) return null;
+    try {
+      return await _channel.invokeMethod<T>(method, arguments);
+    } on MissingPluginException {
+      _unsupported = true;
+      developer.log('AppFig is not available on this platform; the app uses the values in its code.', name: 'AppFig');
+      return null;
+    } catch (e) {
+      developer.log('AppFig $method failed: $e', name: 'AppFig');
+      return null;
+    }
+  }
+
+  // Analytics calls the app could not take yet (Firebase starts after AppFig, for instance) wait here and are
+  // tried again, in order, every 3 seconds for two minutes.
+  static final List<FutureOr<void> Function()> _pending = [];
+  static Timer? _retry;
+  static Future<void> _deliver(FutureOr<void> Function() send) async {
+    if (_pending.isNotEmpty) { _pending.add(send); return; }
+    try {
+      await send();
+    } catch (_) {
+      _pending.add(send);
+      _retryLater();
+    }
+  }
+  static void _retryLater() {
+    if (_retry != null) return;
+    var tries = 0;
+    _retry = Timer.periodic(const Duration(seconds: 3), (t) async {
+      tries++;
+      while (_pending.isNotEmpty) {
+        try { await _pending.first(); _pending.removeAt(0); } catch (_) { break; }
+      }
+      if (_pending.isEmpty || tries >= 40) { _pending.clear(); t.cancel(); _retry = null; }
+    });
+  }
 
   static void _ensureHandler() {
     if (_handlerSet) return;
@@ -48,21 +95,24 @@ class AppFig {
           break;
         case 'analyticsUserProperty':
           final args = (call.arguments as Map?) ?? const {};
-          _analyticsSetUserProperty?.call('${args['key']}', '${args['value']}');
+          final set = _analyticsSetUserProperty;
+          if (set != null) unawaited(_deliver(() => set('${args['key']}', '${args['value']}')));
           break;
         case 'analyticsExperimentAssigned':
           final args = (call.arguments as Map?) ?? const {};
-          _analyticsLogEvent?.call('appfig_experiment', {
-            'experiment': '${args['experimentKey']}',
-            'variant': '${args['variantName']}',
-          });
+          final log = _analyticsLogEvent;
+          if (log != null) {
+            final params = <String, Object>{'experiment': '${args['experimentKey']}', 'variant': '${args['variantName']}'};
+            unawaited(_deliver(() => log('appfig_experiment', params)));
+          }
           break;
         case 'analyticsFeatureSeen':
           final args = (call.arguments as Map?) ?? const {};
-          _analyticsLogEvent?.call('appfig_feature', {
-            'feature': '${args['featureName']}',
-            'feature_value': '${args['value']}',
-          });
+          final log = _analyticsLogEvent;
+          if (log != null) {
+            final params = <String, Object>{'feature': '${args['featureName']}', 'feature_value': '${args['value']}'};
+            unawaited(_deliver(() => log('appfig_feature', params)));
+          }
           break;
       }
     });
@@ -85,7 +135,7 @@ class AppFig {
     String? cdnBaseUrl,
   }) {
     _ensureHandler();
-    return _channel.invokeMethod<void>('init', {
+    return _invoke<void>('init', {
       'companyId': companyId,
       'tenantId': tenantId,
       'env': env,
@@ -100,46 +150,46 @@ class AppFig {
 
   /// The value of [feature] for this user, or null when no rule matches.
   static Future<String?> getFeatureValue(String feature) =>
-      _channel.invokeMethod<String>('getFeatureValue', {'name': feature});
+      _invoke<String>('getFeatureValue', {'name': feature});
 
   /// Whether [feature] is on for this user.
   static Future<bool> isFeatureEnabled(String feature) async =>
-      (await _channel.invokeMethod<bool>('isFeatureEnabled', {'name': feature})) ?? false;
+      (await _invoke<bool>('isFeatureEnabled', {'name': feature})) ?? false;
 
   /// Whether any rules are loaded yet.
-  static Future<bool> hasRulesLoaded() async => (await _channel.invokeMethod<bool>('hasRulesLoaded')) ?? false;
+  static Future<bool> hasRulesLoaded() async => (await _invoke<bool>('hasRulesLoaded')) ?? false;
 
   /// Records an event that rules can target on. Parameter values are sent as text.
   static Future<void> logEvent(String name, {Map<String, Object?>? parameters}) =>
-      _channel.invokeMethod<void>('logEvent', {'name': name, 'params': _stringify(parameters)});
+      _invoke<void>('logEvent', {'name': name, 'params': _stringify(parameters)});
 
   static Future<void> logScreenView(String screenName, {String? previousScreen}) =>
-      _channel.invokeMethod<void>('logScreenView', {'screenName': screenName, 'previousScreen': previousScreen});
+      _invoke<void>('logScreenView', {'screenName': screenName, 'previousScreen': previousScreen});
 
   static Future<void> setUserProperty(String key, Object value) =>
-      _channel.invokeMethod<void>('setUserProperty', {'key': key, 'value': '$value'});
+      _invoke<void>('setUserProperty', {'key': key, 'value': '$value'});
 
-  static Future<void> removeUserProperty(String key) => _channel.invokeMethod<void>('removeUserProperty', {'key': key});
+  static Future<void> removeUserProperty(String key) => _invoke<void>('removeUserProperty', {'key': key});
 
   static Future<void> setDeviceProperty(String key, Object value) =>
-      _channel.invokeMethod<void>('setDeviceProperty', {'key': key, 'value': '$value'});
+      _invoke<void>('setDeviceProperty', {'key': key, 'value': '$value'});
 
-  static Future<void> removeDeviceProperty(String key) => _channel.invokeMethod<void>('removeDeviceProperty', {'key': key});
+  static Future<void> removeDeviceProperty(String key) => _invoke<void>('removeDeviceProperty', {'key': key});
 
-  static Future<void> setAppVersion(String version) => _channel.invokeMethod<void>('setAppVersion', {'version': version});
+  static Future<void> setAppVersion(String version) => _invoke<void>('setAppVersion', {'version': version});
 
   /// A stable id for this user. Optional: without it, A/B tests are assigned per
   /// device. An experiment this device is already in keeps its variant when the
   /// id changes; to have a signed-in user get the same variant on every device,
   /// call this before [init]. Pass null to clear it.
-  static Future<void> setUserId(String? userId) => _channel.invokeMethod<void>('setUserId', {'userId': userId});
+  static Future<void> setUserId(String? userId) => _invoke<void>('setUserId', {'userId': userId});
 
-  static Future<String?> getUserId() => _channel.invokeMethod<String>('getUserId');
+  static Future<String?> getUserId() => _invoke<String>('getUserId');
 
   /// Fetches the latest rules now instead of waiting for the next poll.
-  static Future<void> refreshRules() => _channel.invokeMethod<void>('refreshRules');
+  static Future<void> refreshRules() => _invoke<void>('refreshRules');
 
-  static Future<void> resetSession() => _channel.invokeMethod<void>('resetSession');
+  static Future<void> resetSession() => _invoke<void>('resetSession');
 
   /// Fires each time new rules arrive. Read feature values again when it does.
   static Stream<void> get onRulesUpdated {
@@ -168,13 +218,13 @@ class AppFig {
   /// Works the same whether or not a user id is set. It can be called before or
   /// after [init]; assignments made earlier are delivered when it is called.
   static Future<void> connectAnalytics({
-    required void Function(String name, String value) setUserProperty,
-    required void Function(String name, Map<String, Object> parameters) logEvent,
+    required FutureOr<void> Function(String name, String value) setUserProperty,
+    required FutureOr<void> Function(String name, Map<String, Object> parameters) logEvent,
   }) {
     _ensureHandler();
     _analyticsSetUserProperty = setUserProperty;
     _analyticsLogEvent = logEvent;
-    return _channel.invokeMethod<void>('connectAnalytics');
+    return _invoke<void>('connectAnalytics');
   }
 
   /// Fires when the SDK assigns this user to an A/B test variant.

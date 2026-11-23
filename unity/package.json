@@ -1,0 +1,9 @@
+{
+  "name": "com.appfig.sdk",
+  "version": "2.5.0",
+  "displayName": "AppFig SDK",
+  "description": "Feature flags, remote values and A/B tests for Unity games, evaluated on the device.",
+  "unity": "2021.3",
+  "documentationUrl": "https://appfig.com",
+  "author": { "name": "AppFig", "url": "https://appfig.com" }
+}
